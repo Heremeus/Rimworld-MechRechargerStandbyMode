@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest>
+    <identifier>RechargerStandby</identifier>
+    <version>1.0</version>
+    <dependencies>
+        <!--li>HugsLib</li-->
+        <li>Harmony</li>
+    </dependencies>
+    <showCrossPromotions>true</showCrossPromotions>
+    <manifestUri>https://raw.githubusercontent.com/Heremeus/RechargerStandbyMod/master/About/Manifest.xml</manifestUri>
+    <downloadUri>https://github.com/Heremeus/RechargerStandbyMod/releases/latest</downloadUri>
+</Manifest>

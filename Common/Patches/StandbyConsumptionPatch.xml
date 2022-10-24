@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Disallow dissectable corpses for butchering by default -->
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[@Name = "BaseMechCharger"]</xpath>
+		<value>
+			<li Class="RechargerStandby.StandbyConsumptionDefModExtension">
+				<standbyPowerConsumption>40</standbyPowerConsumption>
+			</li>
+		</value>
+	</Operation>
+</Patch>
