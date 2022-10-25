@@ -15,7 +15,6 @@ namespace RechargerStandby
         static HarmonyPatches()
         {
             Patch();
-            Log.Message("Mech Recharger Standby Mode was loaded successfully");
         }
 
         public static void Patch()
@@ -44,19 +43,14 @@ namespace RechargerStandby
 
         public static void CompPowerTrader_SetUpPowerVars_Postfix(CompPowerTrader __instance)
         {
-            Log.Message("Entered method");
             if (__instance.parent == null) return;
 
-            Log.Message("Getting charger");
             Building_MechCharger charger = __instance.parent as Building_MechCharger;
             if (charger == null) return;
 
-            Log.Message("Getting field");
             FieldInfo field = charger.GetType().GetField("currentlyChargingMech", BindingFlags.NonPublic | BindingFlags.Instance);
-            Log.Message("Getting Pawn from field " + field);
             Pawn currentlyChargingMech = field.GetValue(charger) as Pawn;
 
-            Log.Message("Updating power");
             UpdatePowerConsumptionOfCharger(charger, currentlyChargingMech);
         }
 
