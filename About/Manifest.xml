@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest>
     <identifier>RechargerStandby</identifier>
-    <version>1.0</version>
+    <version>1.0.2</version>
     <dependencies>
-        <!--li>HugsLib</li-->
+        <li>HugsLib</li>
         <li>Harmony</li>
     </dependencies>
     <showCrossPromotions>true</showCrossPromotions>
