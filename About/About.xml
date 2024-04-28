@@ -4,11 +4,12 @@
 	<author>Heremeus</author>
 	<supportedVersions>
 		<li>1.4</li>
+		<li>1.5</li>
 	</supportedVersions>
 	<packageId>Heremeus.MechRechargerStandby</packageId>
-	<description>In Vanilla, mech rechargers always draw full power - even when not in use. With this mod, rechargers go on standby when not in use and only draw 50 W of power.
+	<description>In Vanilla, mech rechargers always draw full power - even when not in use. With this mod, rechargers go on standby when not in use and only draw 40 W of power.
 
-v1.0.2
+v1.0.3
 	</description>
 	<modDependencies>
 		<li>
